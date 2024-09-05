@@ -1,10 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 .navbar-menu {
   list-style: none;
   display: flex;
   justify-content: left;
   background-color: #3498db;
-  margin: 0;
-  padding: 0;
 }
 
 .navbar-link img {
@@ -34,4 +37,32 @@ ul li {
   background-color: #1c5980;
   color:white;
   font-weight: bold;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  background-color: gray;
+}
+
+.grid-item {
+  text-align: center;
+  font-size: 30px;
+}
+.grid-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+.hz-icon {
+  margin-top: 70px;
+  max-width: 50%;
+  height: auto;
+}
+.grid-words {
+  font-size: 15px;
+  color: white;
+}
+
+footer {
+  text-align: center;
 }
