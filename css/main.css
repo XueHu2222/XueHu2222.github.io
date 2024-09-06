@@ -3,11 +3,16 @@ body {
   padding: 0;
   width: 100%;
 }
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 800; 
+}
 .navbar-menu {
   list-style: none;
   display: flex;
   justify-content: left;
-  background-color: #3498db;
+  background-color: #6e9cba;
 }
 
 .navbar-link img {
@@ -15,7 +20,7 @@ body {
   vertical-align: middle;
 }
 
-ul li {
+.navbar-menu li {
   float: left;
 }
 
@@ -34,7 +39,7 @@ ul li {
 }
 
 .active {
-  background-color: #1c5980;
+  background-color: #266c97;
   color:white;
   font-weight: bold;
 }
@@ -42,7 +47,8 @@ ul li {
 .grid-container {
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  background-color: gray;
+  background-color: rgb(178, 178, 178);
+  margin-top: 100px;
 }
 
 .grid-item {
@@ -52,6 +58,7 @@ ul li {
 .grid-title {
   font-weight: bold;
   font-size: 20px;
+  color: #113852;
 }
 .hz-icon {
   margin-top: 70px;

@@ -1,57 +1,84 @@
-/* 基本重置 */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+
+.dashboard-overview-title p {
+  padding-top: 0.2rem;
+  font-size: 60px;
+  color: rgb(189, 131, 185);
+  margin-left: 360px;
 }
 
-/* Header样式 */
-.header {
-  background-color: #3498db;
-  padding: 10px;
-}
-
-/* 导航栏样式 */
-.navbar {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  background-color: #3498db;
-}
-
-.navbar-menu {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  background-color: #3498db;
+.dashboard-overview {
   text-align: center;
+  margin-top: 1.2rem;
+  width: 31.5rem;
+  height: 6rem;
+  margin-left: 220px;
+  width:1000px;
 }
 
-.navbar-menu li {
-  margin: 0;
+.dashboard-overview-layer0 {
+  border-radius: 1rem;
+  background-color: #d3b4b4a7;
 }
 
-.navbar-menu a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  padding: 14px;
-  font-size: 18px;
+.dashboard-overview-layer1 {
+  width: 12.5%;
+  height: 1rem;
+  border-radius: 1.2rem;
+  background-color: #719d93b6;
 }
 
-.navbar-menu a:hover {
-  background-color: #2980b9;
+.boundary-line {
+  position: absolute;
+  height: 2%;
+  border-left: 2px solid rgb(167, 94, 94);
+  left: 70%;
+  margin-top: -16px;
 }
 
-/* 主内容样式 */
-.main-content {
-  padding: 20px;
+.boundary-number {
+  margin-top: 0.4rem;
+  font-size: 1.3rem;
+  color: #555;
+  margin-left: 610px;
 }
 
-/* 页脚样式 */
-.footer {
-  background-color: #2c3e50;
-  color: white;
+.dashboard-m {
+  text-align: right;
+  font-size: 1.3rem;
+  color: #555;
+}
+
+/* table */
+.table-year {
+  margin-left: 20%;
+  margin-right: 20%;
   text-align: center;
-  padding: 10px;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+/* .block-row {
+  background-color: #2e6f9a;
+} */
+
+.block-row {
+  color: rgb(130, 34, 34);
+  font-size: 2.5rem;
+}
+
+.course-row {
+  background-color: #4c8194a7;
+}
+
+.course-row {
+  color: rgb(168, 105, 105);
+  font-size: 1rem;
+}
+
+.result-row {
+  background-color: #b4cef2a7;
+}
+
+.result-row {
+  font-size: 1.2rem;
 }
