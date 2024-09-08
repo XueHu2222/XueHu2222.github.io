@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index page</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+<!-- this is navbar -->
 
 <body>
     <nav>
@@ -16,31 +17,61 @@
             <li><a href="profile.html" class="navbar-link">Profile</a></li>
             <li><a href="dashboard.html" class="navbar-link">Dashboard</a></li>
             <li><a href="faq.html" class="navbar-link">FAQ</a></li>
-            <li><a href="blog.html" class="navbar-link">Blog</a></li>
+            <li class="dropdown">
+                <a href="blog.html" class="navbar-link">Blog</a>
+                <div class="dropdown-content">
+                    <a href="blog-studychoice.html">Study Choice</a>
+                    <a href="blog-swot.html">SWOT Analysis</a>
+                    <a href="blog-programmingexperience.html">Programming Experience</a>
+                    <a href="blog-firstfeedback.html">First Feedback</a>
+                    <a href="blog-article.html">Article about the ICT</a>
+                </div>
+                </li>
         </ul>
     </nav>
+    <!-- this is home page -->
+    <div class="image-container">
+        <img src="/resources/homepage.jpg" alt="beach picture">
+        <div class="text-overlay">
+            <p>Hello! I'm Xue.</p>
+            <p>This is my personal website.</p>
+        </div>
+    </div>
+    <section class="skill-text">
+        <h1 class="skill-title">Skills I'm Learning:</h1>
+        <p> HTML/CSS (Basic)</p>
+        <h1 class="skill-title"> Current Goals:</h1>
+        <p>Learn the basics of JavaScript</p>
+        <h1 class="skill-title"> Future Goals:</h1>
+        <p>Create my own game</p>
+    </section>
     <section>
-        <p>11</p>
+        <p class="my-text">More about <a href="profile.html">me</a></p>
     </section>
     <!-- this is the footer -->
     <section>
         <div class="grid-container">
             <div class="grid-item">
-                <p><img class="hz-icon" src="/resources/hz icon.png" alt="hz icon"></p>
+                <p><img class="hz-icon" src="/resources/hzicon.png" alt="hz icon"></p>
             </div>
             <div class="grid-item">
-                <p class="grid-title"><a>About HZ</a></p> 
-                <p class="grid-words"><a>HZ Portal</a></p>
-                <p class="grid-words"><a>Study progress</a></p>
-                <p class="grid-words"><a>GitHub environment</a></p>
-                <p class="grid-words"><a>Learn environment</a></p>
-                <p class="grid-words"><a>Implementation Regulations</a></p>
-                <p class="grid-words"><a>Course and Examination Regulations</a></p>
+                <p class="grid-title"><a>Studying at HZ</a></p>
+                <p class="grid-words"><a href="https://portal.hz.nl/en/">HZ Portal</a></p>
+                <p class="grid-words"><a href="https://github.com/XueHu2222">GitHub environment</a></p>
+                <p class="grid-words"><a href="https://learn.hz.nl/my/">Learn environment</a></p>
+                <p class="grid-words"><a href="https://hz.nl/en/organisation/regulations-documents">Implementation
+                        Regulations</a></p>
+                <p class="grid-words"><a
+                        href="https://hz.nl/en/secure/for-students/rules-for-education-and-assessments/rights-and-obligations"
+                        alt="Course and Examination Regulations">Course and Examination Regulations</a></p>
             </div>
             <div class="grid-item">
                 <p class="grid-title">Contact Me</p>
-                <p class="grid-words"><a>first link</a></p>
-                <p class="grid-words"><a>second link</a></p>
+                <p class="grid-contact"><a href="https://www.instagram.com/xueeee22/"><img
+                            src="/resources/insicon.png"></a></p>
+                <p class="grid-contact"><a href="https://github.com/XueHu2222"><img src="/resources/githublogo.png"></a>
+                </p>
+                <p class="grid-contact"><a href="mailto:xuehu222@gmail.com"><img src="/resources/gmaillogo.png"></a></p>
             </div>
         </div>
     </section>
