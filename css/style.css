@@ -94,35 +94,41 @@
 /* this is blog */
 .blog-title {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 80px;
+  font-size: 40px;
 }
 .blog-time {
   color: #afb7bb;
   margin-top: -8px;
 }
 
-.swot {
+.blogcontent {
   text-align: center;
   width: 60%;
   margin: 0 auto;
 }
-.swot div {
+.blogcontent div {
   background-color: #e7edf0;
-  padding-bottom: 20px;
-  padding-top: 0.5px;
+  padding: 20px 40px;
   border-radius: 3rem;
   margin-top: 70px;
 }
-.swot-title {
-  font-size: 40px;
+.blog--heading {
+  text-align: center;
   margin-top: 80px;
 }
 .mintitle {
   font-size: 30px;
 }
-.swot-item {
-  font-size: 18px;
-  margin-left: 1px;
+.blog-item {
+  font-size: 20px;
+  text-align: left;
+  margin-left: 30px;
+}
+.blogcontent div h3 {
+  text-align: left;
+  margin: 30px;
+  font-size: 20px;
 }
 
 /* this is faq */
