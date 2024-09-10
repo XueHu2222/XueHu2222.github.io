@@ -1,7 +1,86 @@
-p {
-  font-size:5px ;
+.dashboard-overview {
+  border: 2px solid #113852;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  width: 80%;
+  margin: 20px auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-a {
-  font-size: 500px;
+.dashboard-overview-title p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #113852;
+  text-align: center;
+  margin-bottom: 20px;
 }
+
+.dashboard-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.dashboard-m {
+  font-size: 18px;
+  color: #113852;
+}
+
+.dashboard-m i {
+  font-size: 16px;
+  color: #7f8c8d;
+}
+
+.progress-bar-container {
+  position: relative;
+  width: 80%;
+  height: 25px;
+  background-color: #e7edf0;
+  border-radius: 5px;
+  margin: 0 auto;
+  border: 1px solid #113852;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #e7edf0;
+  border-radius: 5px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4489b8;
+  width: 12.5%;
+  border-radius: 5px;
+}
+
+.table-year table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #f9f9f9;
+}
+
+.table-heading, .table-year td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.table-heading {
+  background-color: #113852;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.table-year td {
+  font-size: 16px;
+  color: rgb(7, 32, 53);
+}
+
+

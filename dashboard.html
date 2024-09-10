@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dashboard page</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -25,22 +24,22 @@
                     <a href="blog-firstfeedback.html">First Feedback</a>
                     <a href="blog-article.html">Article about the ICT</a>
                 </div>
-                </li>
+            </li>
         </ul>
     </nav>
 
-    <section>
+    <section class="dashboard-overview">
         <div class="dashboard-overview-title">
             <p>Overview</p>
         </div>
-        <div class="dashboard-overview">
-            <div class="dashboard-overview-layer0">
-                <div class="dashboard-overview-layer1"></div>
-                <div class="boundary-line"></div>
+        <div class="progress-bar-container">
+            <div class="progress-bar">
+                <div class="progress"></div>
             </div>
-            <p class="boundary-number"><b>45EC&nbsp;</b></p>
-            <p class="dashboard-m"><b>Completed 7.5 out of 60 EC&nbsp;</b></p>
-            <p class="dashboard-m"><i>(* NBSA Boundary: 45)&nbsp;</i></p>
+        </div>
+        <div class="dashboard-info">
+            <p class="dashboard-m"><b>Completed 7.5 out of 60 EC;</b></p>
+            <p class="dashboard-m"><i>(* NBSA Boundary: 45);</i></p>
         </div>
     </section>
 
@@ -48,147 +47,141 @@
     <section>
         <div class="table-year">
             <!-- Semester 1 -->
-            <table class="table-view">
-                <tr class="block-row">
-                    <th colspan="5">Semester 1</th>
+            <table>
+                <tr>
+                    <th class="table-heading"><b>Semester</b></th>
+                    <th class="table-heading"><b>Course Name</b></th>
+                    <th class="table-heading"><b>EC's</b></th>
+                    <th class="table-heading"><b>Assessment Type</b></th>
+                    <th class="table-heading"><b>Grade</b></th>
+                    <th class="table-heading"><b>Status</b></th>
                 </tr>
-                <tr class="course-row">
-                    <td><b>Course Name</b></td>
-                    <td><b>EC's</b></td>
-                    <td><b>Assessment Type</b></td>
-                    <td><b>Grade</b></td>
-                    <td><b>Status</b></td>
-                </tr>
-                <tr class="result-row">
+                <tr>
+                    <td>1</td>
                     <td>Program Career Orientation (PCO)</td>
                     <td>2.5</td>
                     <td>Prensentation</td>
                     <td>8.5</td>
                     <td>Pass</td>
                 </tr>
-                <tr class="result-row">
+                <tr>
+                    <td>1</td>
                     <td>Computer Science Basics (CBA)</td>
                     <td>5</td>
                     <td>Written knowledge test</td>
                     <td>9.0</td>
                     <td>Pass</td>
                 </tr>
-                <tr class="result-row">
+                <tr>
+                    <td>1</td>
                     <td>Programming Basics (PBA)</td>
                     <td>5</td>
                     <td>Written knowledge test</td>
                     <td>3.0</td>
                     <td>Fail</td>
                 </tr>
-                <tr class="result-row">
+                <tr>
+                    <td rowspan="2">1</td>
                     <td rowspan="2">Object-oriented programming (OOP)</td>
                     <td rowspan="2">10</td>
                     <td>Presentation</td>
                     <td>N/A</td>
                     <td>N/A</td>
                 </tr>
-                <tr class="result-row">
+                <tr>
                     <td>Written knowledge test</td>
                     <td>N/A</td>
                     <td>N/A</td>
                 </tr>
-                <tr class="result-row">
+                <tr>
+                    <td rowspan="3">1</td>
                     <td rowspan="3">Framework Project2 (FP2)</td>
-                    <td rowspan="3">100</td>
+                    <td rowspan="3">10</td>
                     <td>Presentation</td>
                     <td>N/A</td>
                     <td>N/A</td>
                 </tr>
-                <tr class="result-row">
+                <tr>
                     <td>Portfolio</td>
                     <td>N/A</td>
                     <td>N/A</td>
                 </tr>
-                <tr class="result-row">
+                <tr>
                     <td>Portfolio</td>
                     <td>N/A</td>
                     <td>N/A</td>
                 </tr>
-                <tr class="result-row">
+                <tr>
+                    <td>1</td>
                     <td>IT Personality projectweek1 (PPW1)</td>
                     <td>1.25</td>
                     <td>Portfolio</td>
                     <td>N/A</td>
                     <td>N/A</td>
                 </tr>
+
                 <!-- Semester 2 -->
-                <tr class="block-row">
-                    <th colspan="5">Semester 2</th>
-                </tr>
-                <tr class="course-row">
-                    <td><b>Course Name</b></td>
-                    <td><b>EC's</b></td>
-                    <td><b>Assessment Type</b></td>
-                    <td><b>Grade</b></td>
-                    <td><b>Status</b></td>
-                </tr>
-                <tr class="result-row">
+
+                <tr>
+                    <td>2</td>
                     <td>IT Personality International week (PIW)</td>
                     <td>1.25</td>
                     <td>Portfolio</td>
                     <td>N/A</td>
                     <td>N/A</td>
                 </tr>
-                <tr class="result-row">
+                <tr>
+                    <td rowspan="4">2</td>
                     <td rowspan="4">Framework Project1 (FPR1)</td>
                     <td rowspan="4">10</td>
                     <td>Written knowledge test</td>
                     <td>N/A</td>
                     <td>N/A</td>
                 </tr>
-                <tr class="result-row">
+                <tr>
                     <td>Written knowledge test</td>
                     <td>N/A</td>
                     <td>N/A</td>
                 </tr>
-                <tr class="result-row">
+                <tr>
                     <td>Presentation</td>
                     <td>N/A</td>
                     <td>N/A</td>
                 </tr>
-                <tr class="result-row">
+                <tr>
                     <td>Portfolio</td>
                     <td>N/A</td>
                     <td>N/A</td>
                 </tr>
-                <tr class="result-row">
+                <tr>
+                    <td>2</td>
                     <td>Business IT Consultancy Basics</td>
                     <td>2.5</td>
                     <td>Assignment</td>
                     <td>N/A</td>
                     <td>N/A</td>
                 </tr>
+
                 <!-- All Year -->
-                <tr class="block-row">
-                    <th colspan="5">All Year</th>
-                </tr>
-                <tr class="course-row">
-                    <td><b>Course Name</b></td>
-                    <td><b>EC's</b></td>
-                    <td><b>Assessment Type</b></td>
-                    <td><b>Grade</b></td>
-                    <td><b>Status</b></td>
-                </tr>
-                <tr class="result-row">
+
+                <tr>
+                    <td>All</td>
                     <td>IT Personality 1 (ITP1)</td>
                     <td>1.25</td>
                     <td>Portfolio</td>
                     <td>N/A</td>
                     <td>N/A</td>
                 </tr>
-                <tr class="result-row">
+                <tr>
+                    <td>All</td>
                     <td>IT Personality 2 (ITP2)</td>
                     <td>1.25</td>
                     <td>Portfolio</td>
                     <td>N/A</td>
                     <td>N/A</td>
                 </tr>
-                <tr class="result-row">
+                <tr>
+                    <td>All</td>
                     <td>Personal Professtional Development Exploration (PPDE)</td>
                     <td>12.5</td>
                     <td>Criterion-referenced assessment</td>
@@ -205,17 +198,22 @@
                 <p><img class="hz-icon" src="/resources/hzicon.png" alt="hz icon"></p>
             </div>
             <div class="grid-item">
-                <p class="grid-title"><a>Studying at HZ</a></p> 
+                <p class="grid-title"><a>Studying at HZ</a></p>
                 <p class="grid-words"><a href="https://portal.hz.nl/en/">HZ Portal</a></p>
                 <p class="grid-words"><a href="https://github.com/XueHu2222">GitHub environment</a></p>
                 <p class="grid-words"><a href="https://learn.hz.nl/my/">Learn environment</a></p>
-                <p class="grid-words"><a href="https://hz.nl/en/organisation/regulations-documents">Implementation Regulations</a></p>
-                <p class="grid-words"><a href="https://hz.nl/en/secure/for-students/rules-for-education-and-assessments/rights-and-obligations" alt="Course and Examination Regulations">Course and Examination Regulations</a></p>
+                <p class="grid-words"><a href="https://hz.nl/en/organisation/regulations-documents">Implementation
+                        Regulations</a></p>
+                <p class="grid-words"><a
+                        href="https://hz.nl/en/secure/for-students/rules-for-education-and-assessments/rights-and-obligations"
+                        alt="Course and Examination Regulations">Course and Examination Regulations</a></p>
             </div>
             <div class="grid-item">
                 <p class="grid-title">Contact Me</p>
-                <p class="grid-contact"><a href="https://www.instagram.com/xueeee22/"><img src="/resources/insicon.png"></a></p>
-                <p class="grid-contact"><a href="https://github.com/XueHu2222"><img src="/resources/githublogo.png"></a></p>
+                <p class="grid-contact"><a href="https://www.instagram.com/xueeee22/"><img
+                            src="/resources/insicon.png"></a></p>
+                <p class="grid-contact"><a href="https://github.com/XueHu2222"><img src="/resources/githublogo.png"></a>
+                </p>
                 <p class="grid-contact"><a href="mailto:xuehu222@gmail.com"><img src="/resources/gmaillogo.png"></a></p>
             </div>
         </div>
