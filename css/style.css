@@ -349,6 +349,9 @@ nav {
   margin: 30px;
   font-size: 20px;
 }
+.blogcontent div img {
+  width: 80%;
+}
 
 /* this is faq */
 .faq-section h1 {
