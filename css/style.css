@@ -84,7 +84,7 @@ nav {
 }
 .text-overlay {
   position: absolute;
-  top: 55%;
+  top: 48%;
   left: 70%;
   color: rgb(71, 65, 65);
   font-size: 40px;
@@ -165,8 +165,9 @@ nav {
 
 /* this is profile */
 .profile-section {
-  margin-left: 100px;
+  margin-left: 50px;
   margin-bottom: -40px;
+  margin-top: 40px;
 }
 .text-profile {
   position: absolute;
