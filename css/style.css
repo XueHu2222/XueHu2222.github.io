@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  font-family: 'Times New Roman', Times, serif;
 }
 /* this is navbar */
 
@@ -19,7 +20,7 @@ nav {
 }
 
 .navbar-link img {
-  height: 28px;
+  height: 20px;
   vertical-align: middle;
 }
 
@@ -88,7 +89,6 @@ nav {
   left: 70%;
   color: rgb(71, 65, 65);
   font-size: 40px;
-  font-family: 'Times New Roman', Times, serif;
 }
 .skill-text {
   margin-top: 80px;
@@ -97,19 +97,6 @@ nav {
 }
 .skill-title {
   font-size: 30px;
-  font-family: 'Times New Roman', Times, serif;
-}
-.skill-text p {
-  font-size: 18px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.my-text {
-  font-size: 30px;
-  text-align: center;
-  font-family: 'Times New Roman', Times, serif;
-  margin-top: 60px;
-  margin-bottom: -10px;
-  font-weight: bold;
 }
 
 .pc-container {
@@ -129,7 +116,7 @@ nav {
   margin-top: -20px;
 }
 .reason-text p {
-  font-size: 20px;
+  font-size: 25px;
   margin-top: -20px;
   margin-right: 50px;
 }
@@ -146,10 +133,9 @@ nav {
 .code-text {
   text-align: left;
   margin-left: 50px;
-  margin-top: 60px;
 }
 .code-text p {
-  font-size: 20px;
+  font-size: 25px;
   margin-right: 50px;
 }
 
@@ -167,7 +153,7 @@ nav {
 .profile-section {
   margin-left: 50px;
   margin-bottom: -40px;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 .text-profile {
   position: absolute;
@@ -176,7 +162,6 @@ nav {
   color: rgb(71, 65, 65);
   font-size: 40px;
   margin-left: -100px;
-  font-family: 'Times New Roman', Times, serif;
 }
 .profile-title {
   font-size: 50px;
@@ -184,7 +169,6 @@ nav {
   margin-left: 10px;
   margin-bottom: 20px;
   margin-top: 40px;
-  font-family: 'Times New Roman', Times, serif;
 }
 .profile-p {
   margin: 10px;
@@ -194,7 +178,6 @@ nav {
 }
 
 .aboutme {
-  font-family: 'Times New Roman', Times, serif;
   background-color: #e7edf0;
   border-radius: 3rem;
 }
@@ -225,7 +208,7 @@ nav {
   padding: 20px;
   border-radius: 10px;
   background-color: #f9f9f9;
-  width: 80%;
+  width: 60%;
   margin: 20px auto;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -276,13 +259,13 @@ nav {
 .progress {
   height: 100%;
   background-color: #4489b8;
-  width: 12.5%;
+  width: 0%;
   border-radius: 5px;
 }
   .table-year table {
-    width: 100%;
+    width: 85%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin: 20px auto;
     background-color: #f9f9f9;
   }
   
@@ -293,7 +276,7 @@ nav {
   }
   
   .table-heading {
-    background-color: #113852;
+    background-color: #4489b8;
     color: white;
     font-weight: bold;
     font-size: 18px;
@@ -398,7 +381,7 @@ nav {
   height: auto;
 }
 .grid-words {
-  font-size: 15px;
+  font-size: 18px;
   color: white;
   margin-bottom: 10px;
 }

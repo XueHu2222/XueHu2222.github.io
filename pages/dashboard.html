@@ -5,26 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dashboard page</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <nav>
         <ul class="navbar-menu">
-            <li><a href="index.html" class="navbar-link"><img src="resources/homeicon.png" alt="homeicon"></a></li>
-            <li><a href="profile.html" class="navbar-link">Profile</a></li>
-            <li><a href="dashboard.html" class="navbar-link active">Dashboard</a></li>
-            <li><a href="faq.html" class="navbar-link">FAQ</a></li>
+            <li><a href="/pages/index.html" class="navbar-link"><img src="../resources/homeicon.png" alt="homeicon"></a></li>
+            <li><a href="/pages/profile.html" class="navbar-link">Profile</a></li>
+            <li><a href="/pages/dashboard.html" class="navbar-link active">Dashboard</a></li>
+            <li><a href="/pages/faq.html" class="navbar-link">FAQ</a></li>
             <li class="dropdown">
-                <a href="blog.html" class="navbar-link">Blog</a>
+                <a href="/pages/blog/blog.html" class="navbar-link">Blog</a>
                 <div class="dropdown-content">
-                    <a href="blog-studychoice.html">Study Choice</a>
-                    <a href="blog-swot.html">SWOT Analysis</a>
-                    <a href="blog-programmingexperience.html">Programming Experience</a>
-                    <a href="blog-firstfeedback.html">First Feedback</a>
-                    <a href="blog-article.html">Article about the ICT</a>
+                    <a href="/pages/blog/blog-studychoice.html">Study Choice</a>
+                    <a href="/pages/blog/blog-swot.html">SWOT Analysis</a>
+                    <a href="/pages/blog/blog-programmingexperience.html">Programming Experience</a>
+                    <a href="/pages/blog/blog-firstfeedback.html">First Feedback</a>
+                    <a href="/pages/blog/blog-article.html">Article about the ICT</a>
                 </div>
-            </li>
+                </li>
         </ul>
     </nav>
 
@@ -34,11 +34,11 @@
         </div>
         <div class="progress-bar-container">
             <div class="progress-bar">
-                <div class="progress"></div>
+                <div class="progress" id="progress"></div>
             </div>
         </div>
         <div class="dashboard-info">
-            <p class="dashboard-m"><b>Completed 7.5 out of 60 EC;</b></p>
+            <p class="dashboard-m"><b id="total-ec">Completed 0 out of 60 EC;</b></p>
             <p class="dashboard-m"><i>(* NBSA Boundary: 45);</i></p>
         </div>
     </section>
@@ -61,63 +61,57 @@
                     <td>Program Career Orientation (PCO)</td>
                     <td>2.5</td>
                     <td>Prensentation</td>
-                    <td>8.5</td>
-                    <td>Pass</td>
+                    <td><input type="number" class="grade-input" data-ec="2.5" onchange="updateOverview()"></td>
+                    <td class="status"></td>
                 </tr>
                 <tr>
                     <td>1</td>
                     <td>Computer Science Basics (CBA)</td>
                     <td>5</td>
                     <td>Written knowledge test</td>
-                    <td>9.0</td>
-                    <td>Pass</td>
+                    <td><input type="number" class="grade-input" data-ec="5" onchange="updateOverview()"></td>
+                    <td class="status"></td>
                 </tr>
                 <tr>
                     <td>1</td>
                     <td>Programming Basics (PBA)</td>
                     <td>5</td>
                     <td>Written knowledge test</td>
-                    <td>3.0</td>
-                    <td>Fail</td>
+                    <td><input type="number" class="grade-input" data-ec="5" onchange="updateOverview()"></td>
+                    <td class="status"></td>
                 </tr>
                 <tr>
                     <td rowspan="2">1</td>
                     <td rowspan="2">Object-oriented programming (OOP)</td>
                     <td rowspan="2">10</td>
                     <td>Presentation</td>
-                    <td>N/A</td>
-                    <td>N/A</td>
+                    <td rowspan="2"><input type="number" class="grade-input" data-ec="10" onchange="updateOverview()"></td>
+                    <td rowspan="2" class="status"></td>
                 </tr>
                 <tr>
                     <td>Written knowledge test</td>
-                    <td>N/A</td>
-                    <td>N/A</td>
                 </tr>
                 <tr>
                     <td rowspan="3">1</td>
                     <td rowspan="3">Framework Project2 (FP2)</td>
                     <td rowspan="3">10</td>
                     <td>Presentation</td>
-                    <td>N/A</td>
-                    <td>N/A</td>
+                    <td rowspan="3"><input type="number" class="grade-input" data-ec="10" onchange="updateOverview()"></td>
+                    <td rowspan="3" class="status"></td>
                 </tr>
                 <tr>
                     <td>Portfolio</td>
-                    <td>N/A</td>
-                    <td>N/A</td>
                 </tr>
                 <tr>
                     <td>Portfolio</td>
-                    <td>N/A</td>
-                    <td>N/A</td>
                 </tr>
                 <tr>
                     <td>1</td>
                     <td>IT Personality projectweek1 (PPW1)</td>
                     <td>1.25</td>
                     <td>Portfolio</td>
-                    <td>N/A</td>
-                    <td>N/A</td>
+                    <td><input type="number" class="grade-input" data-ec="1.25" onchange="updateOverview()"></td>
+                    <td class="status"></td>
                 </tr>
 
                 <!-- Semester 2 -->
@@ -127,66 +121,43 @@
                     <td>IT Personality International week (PIW)</td>
                     <td>1.25</td>
                     <td>Portfolio</td>
-                    <td>N/A</td>
-                    <td>N/A</td>
+                    <td><input type="number" class="grade-input" data-ec="1.25" onchange="updateOverview()"></td>
+                    <td class="status"></td>
                 </tr>
                 <tr>
                     <td rowspan="4">2</td>
                     <td rowspan="4">Framework Project1 (FPR1)</td>
                     <td rowspan="4">10</td>
                     <td>Written knowledge test</td>
-                    <td>N/A</td>
-                    <td>N/A</td>
+                    <td rowspan="4"><input type="number" class="grade-input" data-ec="10" onchange="updateOverview()"></td>
+                    <td rowspan="4" class="status"></td>
                 </tr>
                 <tr>
                     <td>Written knowledge test</td>
-                    <td>N/A</td>
-                    <td>N/A</td>
                 </tr>
                 <tr>
                     <td>Presentation</td>
-                    <td>N/A</td>
-                    <td>N/A</td>
                 </tr>
                 <tr>
                     <td>Portfolio</td>
-                    <td>N/A</td>
-                    <td>N/A</td>
                 </tr>
                 <tr>
                     <td>2</td>
                     <td>Business IT Consultancy Basics</td>
                     <td>2.5</td>
                     <td>Assignment</td>
-                    <td>N/A</td>
-                    <td>N/A</td>
+                    <td><input type="number" class="grade-input" data-ec="2.5" onchange="updateOverview()"></td>
+                    <td class="status"></td>
                 </tr>
 
                 <!-- All Year -->
-
-                <tr>
-                    <td>All</td>
-                    <td>IT Personality 1 (ITP1)</td>
-                    <td>1.25</td>
-                    <td>Portfolio</td>
-                    <td>N/A</td>
-                    <td>N/A</td>
-                </tr>
-                <tr>
-                    <td>All</td>
-                    <td>IT Personality 2 (ITP2)</td>
-                    <td>1.25</td>
-                    <td>Portfolio</td>
-                    <td>N/A</td>
-                    <td>N/A</td>
-                </tr>
                 <tr>
                     <td>All</td>
                     <td>Personal Professtional Development Exploration (PPDE)</td>
                     <td>12.5</td>
                     <td>Criterion-referenced assessment</td>
-                    <td>N/A</td>
-                    <td>N/A</td>
+                    <td><input type="number" class="grade-input" data-ec="12.5" onchange="updateOverview()"></td>
+                    <td class="status"></td>
                 </tr>
             </table>
         </div>
@@ -210,16 +181,55 @@
             <div class="grid-item">
                 <p class="grid-title">Contact Me</p>
                 <p class="grid-contact"><a href="https://www.instagram.com/xueeee22/"><img
-                            src="/resources/insicon.png" alt="ins logo"></a></p>
-                <p class="grid-contact"><a href="https://github.com/XueHu2222"><img src="/resources/githublogo.png" alt="github logo"></a>
+                            src="../resources/insicon.png" alt="ins logo"></a></p>
+                <p class="grid-contact"><a href="https://github.com/XueHu2222"><img src="../resources/githublogo.png" alt="github logo"></a>
                 </p>
-                <p class="grid-contact"><a href="mailto:xuehu222@gmail.com"><img src="/resources/gmaillogo.png" alt="gmail logo"></a></p>
+                <p class="grid-contact"><a href="mailto:xuehu222@gmail.com"><img src="../resources/gmaillogo.png" alt="gmail logo"></a></p>
             </div>
         </div>
     </section>
     <footer>
         <p>&copy; 2024 Xue Hu. All rights reserved.</p>
     </footer>
+
+    <script>
+        function updateOverview() {
+            const inputs = document.querySelectorAll('.grade-input');
+            let totalEC = 0;
+            let completed = 0;
+    
+            inputs.forEach(input => {
+                const grade = parseFloat(input.value);
+                const ec = parseFloat(input.dataset.ec);
+    
+                const statusCell = input.parentElement.nextElementSibling;
+                if (!isNaN(grade)) {
+                    if (grade >= 5.5) {
+                        completed += ec;
+                        statusCell.textContent = 'Pass';
+                    } else {
+                        statusCell.textContent = 'Fail';
+                    }
+                } else {
+                    statusCell.textContent = 'N/A';
+                }
+            });
+    
+            totalEC = completed;
+            document.getElementById('total-ec').innerText = `Completed ${totalEC} out of 60 EC;`;
+            const progress = document.getElementById('progress');
+            progress.style.width = `${(totalEC / 60) * 100}%`;
+        }
+    
+        function initializeStatus() {
+            const inputs = document.querySelectorAll('.grade-input');
+            inputs.forEach(input => {
+                input.dispatchEvent(new Event('change'));
+            });
+        }
+    
+        window.onload = initializeStatus;
+    </script>
 </body>
 
 </html>
