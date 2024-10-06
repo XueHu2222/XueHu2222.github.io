@@ -46,7 +46,7 @@ nav {
 
 .active {
   background-color: #4489b8;
-  color:white;
+  color:white !important;
   font-weight: bold;
 }
 
@@ -107,16 +107,24 @@ nav {
 
 .pc-picture {
   margin-left: 50px;
-  height: 300px; 
+  height: 400px; 
   object-fit: cover;
 }
 .reason-text {
   text-align: left;
+  margin-left: 30px;
+  margin-top: -25px;
+  margin-right: 50px;
+  background-color: #e7edf0;
+  border-radius: 3rem;
+}
+.reason-text h1 {
   margin-left: 50px;
-  margin-top: -20px;
+  font-size: 35px;
 }
 .reason-text p {
-  font-size: 25px;
+  margin-left: 50px;
+  font-size: 26px;
   margin-top: -20px;
   margin-right: 50px;
 }
@@ -126,6 +134,7 @@ nav {
   grid-template-columns: 40% 60%;
   gap: 30px;
   margin-top: 80px;
+
 }
 .code-picture {
   width: 800px;
@@ -133,28 +142,51 @@ nav {
 .code-text {
   text-align: left;
   margin-left: 50px;
+  background-color: #e7edf0;
+  border-radius: 3rem;
+}
+.code-text h1 {
+  margin-left: 50px;
+  margin-top: 40px;
 }
 .code-text p {
   font-size: 25px;
   margin-right: 50px;
+  margin-left: 50px;
 }
 
 .learn-container {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 40% 60%;
   margin-top: 80px;
   margin-left: 40px;
 }
 .learn-picture {
   width: 400px;
+  margin-left: 20px;
 }
 
-/* this is profile */
-.profile-section {
-  margin-left: 50px;
-  margin-bottom: -40px;
-  margin-top: 0px;
+.passion-text {
+  text-align: left;
+  margin-left: 10px;
+  background-color: #e7edf0;
+  border-radius: 3rem;
+  margin-right:40px;
 }
+.passion-text h1 {
+  margin-left: 50px;
+  margin-top: 40px;
+}
+.passion-text p {
+  font-size: 25px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+/* this is profile */
+.xbox {
+  width: 100%;
+}
+
 .text-profile {
   position: absolute;
   top: 30%;
@@ -163,23 +195,30 @@ nav {
   font-size: 40px;
   margin-left: -100px;
 }
-.profile-title {
-  font-size: 50px;
+.profile-section {
+  background-color: #e7edf0;
+  border-radius: 3rem;
   list-style: none;
-  margin-left: 10px;
-  margin-bottom: 20px;
-  margin-top: 40px;
+}
+.profile-title {
+  padding: 10px;
+  font-size: 40px;
+  font-weight: 600; 
+  text-align: center;
 }
 .profile-p {
-  margin: 10px;
-  font-size: 23px;
-  margin-left: 10px;
-  list-style: none;
+  font-size: 30px;
+  text-align: left;
+  padding-bottom: 21px;
 }
-
+.trip-picture {
+  width: 100%;
+  border-radius: 3rem;
+}
 .aboutme {
   background-color: #e7edf0;
   border-radius: 3rem;
+  text-align: left;
 }
 .aboutme h1 {
   font-size: 40px;
@@ -188,17 +227,26 @@ nav {
 .aboutme p {
   font-size: 30px;
   padding: 10px 40px;
-  text-align: center;
 }
 .hobbybox {
   display: grid;
   grid-template-columns: 50% 50%;
-  padding: 90px;
-  gap: 50px;
+  padding-left: 50px;
+  padding-right: 100px;
+  padding-top: 50px;
+  gap: 40px;
 }
 .playgame {
   width:100%;
   border-radius: 3rem;
+}
+.favorite-games {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin: 50px;
+}
+.somegames {
+  width: 90%;
 }
 
 /* this is dashboard */
@@ -324,7 +372,7 @@ nav {
   font-size: 30px;
 }
 .blog-item {
-  font-size: 20px;
+  font-size: 28px;
   text-align: left;
   margin-left: 30px;
 }
